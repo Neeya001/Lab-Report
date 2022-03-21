@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+   <title>Field Sets and Forms</title>
+</head>
+<body bgcolor="skyblue">
+<form action="neeya.php" method="POST">
+    <fieldset>
+        <h3 align="center">University IT Club Subscription</h3>
+        <fieldset>
+            <legend>Personal Details</legend>
+            Name:<input type="text" name="name" required><br>
+            Gender:<input type="radio" name="gender" required>Male <input type="radio" name="gender" required>Female<br>
+            Date Of Birth:<input type="date" name="date" required><br>
+            Upload Photo:<input type="file" name="photo" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Other Details</legend>
+            College:<select name="college">
+                <option>--Choose College--</option>
+                <option value="tri">Trinity College</option>
+                <option value="uni">Uniglobe College</option>
+                <option value="kmc">KMC College</option>
+            </select>
+            Email:<input type="email" name="email" required><br>
+            Field of Interest:<br><input type="checkbox" name="interest" required> &nbsp;&nbsp;IOT<input type="checkbox" name="interest">Network Security<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="interest">Cloud Computing<input type="checkbox" name="interest">Web Development<br>
+            Current Skill level:<input type="range" name="skill" required><br>
+            Describe about Yourself in 250 words:<br><textarea cols="25" rows="5" placeholder="Text here"></textarea>
+        </fieldset>
+        <input type="radio" name="agree" required>I agree the club's terms and conditions<br>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Clear Now">
+    </fieldset>
+</form>
+</body>
+</html>
